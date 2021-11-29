@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-const { PORT, mongoURI } = require('./config')
+const { PORT, mongoUri } = require('./config')
 
 mongoose
     .connect(mongoUri, {
