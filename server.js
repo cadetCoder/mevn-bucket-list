@@ -6,6 +6,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 app.user(cors())
+app.use(morgan())
 
 mongoose
     .connect(mongoUri, {
