@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const { PORT, mongoUri } = require('./config')
 const cors = require('cors')
 const morgan = require('morgan')
+bodyParser = require('body-parser')
 
 app.use(cors())
 app.use(morgan('tiny'))
