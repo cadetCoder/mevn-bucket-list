@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const { PORT, mongoUri } = require('./config')
 const cors = require('cors')
+const morgan = require('morgan')
 
 app.user(cors())
 
