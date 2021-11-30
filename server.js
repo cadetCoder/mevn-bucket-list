@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const { PORT, mongoUri } = require('./config')
+const cors = require('cors')
+
+app.user(cors())
 
 mongoose
     .connect(mongoUri, {
