@@ -5,8 +5,8 @@ const { PORT, mongoUri } = require('./config')
 const cors = require('cors')
 const morgan = require('morgan')
 
-app.user(cors())
-app.use(morgan())
+app.use(cors())
+app.use(morgan('tiny'))
 
 mongoose
     .connect(mongoUri, {
