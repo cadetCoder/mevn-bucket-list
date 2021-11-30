@@ -8,6 +8,7 @@ bodyParser = require('body-parser')
 
 app.use(cors())
 app.use(morgan('tiny'))
+app.use(bodyParser.json())
 
 mongoose
     .connect(mongoUri, {
