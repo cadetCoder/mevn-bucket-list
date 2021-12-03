@@ -5,4 +5,5 @@ const router = Router()
 
 router.get('/', async (req, res) => {
   const bucketListItems = await BucketListItem.find()
+  if (!bucketListItems) throw new Error('No bucketListItems')
 })
