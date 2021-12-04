@@ -9,4 +9,5 @@ router.get('/', async (req, res) => {
   const srted = bucketListItems.sort((a,b) => {
     return new Date(a.date).getTime() - new Date(b.date).getTime()
   })
+  res.status(200).json(sorted)
 })
