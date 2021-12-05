@@ -15,3 +15,12 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: error.message})
   }
 })
+
+router.post('/', async(req, res) => {
+  const newBucketListItem = new BucketListItem(req.body)
+  try {
+    const buceketListItem = await newBucketListItem.save()
+  } catch (error) {
+    
+  }
+})
