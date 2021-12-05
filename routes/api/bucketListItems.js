@@ -19,8 +19,8 @@ router.get('/', async (req, res) => {
 router.post('/', async(req, res) => {
   const newBucketListItem = new BucketListItem(req.body)
   try {
-    const buceketListItem = await newBucketListItem.save()
-    if (!bucketLIstItem) throw new Error('Something went wrong saving the bucketListItem')
+    const bucketListItem = await newBucketListItem.save()
+    if (!bucketListItem) throw new Error('Something went wrong saving the bucketListItem')
     res.status(200).son(bucketListItem)
   } catch (error) {
     
