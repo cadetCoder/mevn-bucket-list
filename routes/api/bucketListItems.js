@@ -26,3 +26,16 @@ router.post('/', async (req, res) => {
       res.status(500).json({ message: error.message })
   }
 })
+
+router.put('/:id', async (req, res) => {
+  const { id } = req.params
+
+  try {
+      const response = await BucketListItem.findByIdAndUpdate(id, req.body)
+      if (!response) throw Error('Something went wrong ')
+      const updated = { ...response._doc, ...req.body }
+      res.status(200).json(updated)
+  } catch (error) {
+      res.status(500).json({ message: error.message })
+  }
+})
