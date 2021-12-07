@@ -21,6 +21,7 @@ mongoose
     .then(() => console.log('MongoDB database Connected...'))
     .catch((err) => console.log(err))
 
+app.use('./api/bucketListItems', bucketListItemRoutes)
 app.get('/', (req,res) => res.send(''))
 
 app.listen(PORT, () => console.log(`Listening to PORT ${PORT}`))
