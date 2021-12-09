@@ -6,7 +6,12 @@
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  date() {
+    return {
+      items: []
+    }
+  }
 }
 </script>
 
