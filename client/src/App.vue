@@ -14,6 +14,7 @@ export default {
   },
   async mounted() {
     const response = await axios.get('api/bucketListItems/')
+    this.items = response.data
   }
 }
 </script>
