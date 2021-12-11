@@ -2,6 +2,7 @@
   <div id="app">
     <div class="notification" v-for="(item, i) in items" :key="item_id">
       <p>
+         <span class="tag is-primary">{{ i + 1}}</span>
         {{ item.description }}
       </p>
     </div>
