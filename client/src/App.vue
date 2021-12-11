@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="notification" v-for="(item, i) in items" :key="item_id"></div>
   </div>
 </template>
 
