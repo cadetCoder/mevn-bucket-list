@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <div class="field has-addons">
+      <div class="control is-expanded">
+        <input class="input" type="text" placeholder="Go to mars...">
+      </div>
     </div>
       <div class="notification" v-for="(item, i) in items" :key="item._id">
         <p>
