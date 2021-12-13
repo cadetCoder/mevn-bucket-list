@@ -4,6 +4,9 @@
       <div class="control is-expanded">
         <input class="input" type="text" placeholder="Go to mars...">
       </div>
+      <div class="control">
+        <a class="button is-info">Add</a>
+      </div>
     </div>
       <div class="notification" v-for="(item, i) in items" :key="item._id">
         <p>
