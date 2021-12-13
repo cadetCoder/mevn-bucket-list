@@ -2,7 +2,7 @@
   <div id="app">
     <div class="field has-addons">
       <div class="control is-expanded">
-        <input class="input" type="text" placeholder="Go to mars...">
+        <input class="input" type="text" v-model="description" placeholder="Go to mars...">
       </div>
       <div class="control">
         <a class="button is-info">Add</a>
@@ -23,7 +23,8 @@ export default {
   name: 'App',
   date() {
     return {
-      items: []
+      items: [],
+      description: ""
     }
   },
   async mounted() {
