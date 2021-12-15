@@ -30,6 +30,12 @@ export default {
   async mounted() {
     const response = await axios.get('api/bucketListItems/')
     this.items = response.data
+  },
+  methods: {
+    async addItem() {
+      const reponse = await axios.post('api/bucketListItems/', { description: this.description});
+      this.items.push(response.data)
+    },
   }
 }
 </script>
