@@ -14,6 +14,11 @@
           <span class="tag is-primary">{{ i + 1}}</span>
           {{ item.description }}
         </p>
+        <div class="column is-narrow">
+          <span class="icon has-text-info">
+            <i class="material-icons">delete</i>
+          </span>
+        </div>
         </div>
       </div>
   </div>
