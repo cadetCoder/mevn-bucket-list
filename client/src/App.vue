@@ -9,7 +9,8 @@
       </div>
     </div>
       <div class="notification" v-for="(item, i) in items" :key="item._id">
-        <p>
+        <div class="columns"></div>
+        <p class="column">
           <span class="tag is-primary">{{ i + 1}}</span>
           {{ item.description }}
         </p>
