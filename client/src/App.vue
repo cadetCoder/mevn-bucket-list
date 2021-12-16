@@ -34,7 +34,8 @@ export default {
   methods: {
     async addItem() {
       const reponse = await axios.post('api/bucketListItems/', { description: this.description});
-      this.items.push(response.data)
+      this.items.push(response.data);
+      this.description = "";
     },
   }
 }
