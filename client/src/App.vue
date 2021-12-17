@@ -36,7 +36,8 @@ export default {
   date() {
     return {
       items: [],
-      description: ""
+      description: "",
+      editedDescription: ""
     }
   },
   async mounted() {
