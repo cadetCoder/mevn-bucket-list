@@ -15,7 +15,7 @@
           {{ item.description }}
         </p>
         <div class="column is-narrow">
-          <span class="icon has-text-info">
+          <span class="icon has-text-info" @click="removeItem(item, i)">
             <i class="material-icons">delete</i>
           </span>
         </div>
