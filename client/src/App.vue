@@ -44,6 +44,10 @@ export default {
       this.items.push(response.data);
       this.description = "";
     },
+    async removeItem(item, i) {
+      await axios.delete("api/bucketListItems/" + item._id);
+      this.items.splice(i, 1);
+    },
   }
 }
 </script>
