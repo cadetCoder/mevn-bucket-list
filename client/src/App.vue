@@ -37,7 +37,8 @@ export default {
     return {
       items: [],
       description: "",
-      editedDescription: ""
+      editedDescription: "",
+      selected: {}
     }
   },
   async mounted() {
