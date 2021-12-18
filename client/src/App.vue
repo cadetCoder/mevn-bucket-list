@@ -55,6 +55,10 @@ export default {
       await axios.delete("api/bucketListItems/" + item._id);
       this.items.splice(i, 1);
     },
+    select(item) {
+      this.selected = item;
+      this.editedDescription = item.description;
+    },
   }
 }
 </script>
