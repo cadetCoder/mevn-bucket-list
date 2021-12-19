@@ -10,8 +10,8 @@
     </div>
       <div class="notification" v-for="(item, i) in items" :key="item._id">
         <div class="columns">
-          <input type="text" class="column input" v-if="selected._id === item._id"/>
-          <p class="column">
+          <input type="text" class="column input" v-if="selected._id === item._id" v-model="editedDescription" />
+          <p v-else class="column">
           <span class="tag is-primary">{{ i + 1}}</span>
           {{ item.description }}
         </p>
