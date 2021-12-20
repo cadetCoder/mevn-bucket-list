@@ -63,6 +63,10 @@ export default {
     isSelected(item) {
       return item._id === this.selected._id;
     },
+    unselect() {
+      this.selected = {};
+      this.editedDescription = "";
+    },
   }
 }
 </script>
