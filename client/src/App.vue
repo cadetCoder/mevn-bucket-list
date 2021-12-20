@@ -16,7 +16,7 @@
           {{ item.description }}
         </p>
         <div class="column is-narrow">
-          <span class=" icon has-text-primary" @click="select(item)">
+          <span class=" icon has-text-primary" @click="select(item) ?  unselect() : select(item)">
             <i class="material-icons">{{isSelected(item) ? 'close': 'edit'}}</i>
           </span>
 
