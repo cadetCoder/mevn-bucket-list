@@ -10,7 +10,7 @@
     </div>
       <div class="notification" v-for="(item, i) in items" :key="item._id">
         <div class="columns">
-          <input type="text" class="column input" v-if="selected._id === item._id" v-model="editedDescription" />
+          <input type="text" class="column input" v-if="isSelected(item)" v-model="editedDescription" />
           <p v-else class="column">
           <span class="tag is-primary">{{ i + 1}}</span>
           {{ item.description }}
@@ -59,6 +59,9 @@ export default {
     select(item) {
       this.selected = item;
       this.editedDescription = item.description;
+    },
+    isSelected(item) {
+      return item._id === this.selected._id;
     },
   }
 }
