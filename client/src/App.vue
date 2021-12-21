@@ -67,6 +67,13 @@ export default {
       this.selected = {};
       this.editedDescription = "";
     },
+    async updateItem(item, i) {
+      const response = await axios.put("api/bucketListItems/" + item._id, {
+        description: this.editedDescription
+      });
+      this.items[i] = response.data;
+      this.unselect();
+    }
   }
 }
 </script>
