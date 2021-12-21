@@ -21,7 +21,7 @@
           </span>
 
           <span class="icon has-text-info" @click="removeItem(item, i)">
-            <i class="material-icons">delete</i>
+            <i class="material-icons">{{isSelected(item) ? 'save': 'delete'}}</i>
           </span>
 
         </div>
