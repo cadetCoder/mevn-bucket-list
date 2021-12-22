@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1 class="subtitle has-text-centered">Bucket List:</h1>
+    <hr />
     <div class="field has-addons">
       <div class="control is-expanded">
         <input class="input" type="text" v-model="description" placeholder="Go to mars...">
